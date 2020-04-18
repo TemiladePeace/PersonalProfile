@@ -393,21 +393,25 @@ footer {
    #first, #second{
        flex-direction: column;
    }
-   #first { width: 100%; }
+   #first { width: 100%; 
+    margin-bottom: 15px;
+}
    #second {width: 100% !important;
     height: 200px;
 }
   svg{
     align-items: center;      
   }
+  li{
+    align-items: center;
+    padding-left: 18px;
+}
 }
 @media only screen and (max-width: 680px) and (min-width: 270px){
     #contact{
         flex-direction: column-reverse;
     }
-    .icons {
-    margin-right: 25px;
-}
+   
 }
 
 
