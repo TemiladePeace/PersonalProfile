@@ -258,7 +258,55 @@ section{
     margin-top: 25px;
     background-color: #ffc2c2;
 }
-
+#first {
+    width: 80%;
+    float: left;
+    height: 350px;
+}
+#second {
+    width: 20%;
+    float: left;
+    height: 350px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.input-t {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+#submit{
+    font-size: 16px;
+}
+.btns{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    opacity: 0.9;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.btns:hover{
+    opacity:1;
+background-color: white;
+    color: black;
+}
+#clear{
+    clear: both;
+}
 .contact-heading {
     font-size: 30px;
     margin: 15px;
@@ -276,6 +324,7 @@ svg {
     border-radius: 50%;
     text-align: center;
 }
+
 
 footer {
     background-color: black;
@@ -341,8 +390,16 @@ footer {
     #right #text-wraps p {
         font-size: 20px;
     }
-   
-  
+   #first, #second{
+       flex-direction: column;
+   }
+   #first { width: 100%; }
+   #second {width: 100% !important;
+    height: 200px;
+}
+  svg{
+    align-items: center;      
+  }
 }
 @media only screen and (max-width: 680px) and (min-width: 270px){
     #contact{
@@ -353,14 +410,4 @@ footer {
 }
 }
 
-/* @media (max-width: 900px){
-#contact-wrap {
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 16px;
-    padding-top: 0;
-    box-sizing: border-box;
-}
-} */
 
